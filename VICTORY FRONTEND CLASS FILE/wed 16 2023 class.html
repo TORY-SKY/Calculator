@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            
+        }
+        #Container{
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background-color: #ff0000;
+            animation-name: changeColor;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes changeColor {
+            0% { top: 0; left: 0;}
+            20% { top: 0; left: 200;}
+           50% { top: 200; left: 200;} 
+           75% {top: 200; left: 0;} 
+           100% {top: 0; left: 0;s} 
+           
+        }
+    </style>
+</head>
+<body>
+    <!--CSS ANIMATION
+    ANIMATION-NAME
+    ANIMATION-DURATION
+    ANIMATION-ITERATION-COUNT
+    ANIMATION-DELAY
+    @KEYFRAME
+    -->
+
+
+    <div id="Container"></div>
+</body>
+</html>

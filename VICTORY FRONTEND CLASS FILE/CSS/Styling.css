@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Borel&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 123px 12px;
+    background: #fff;
+   
+
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    
+    
+    
+}
+header .logo{
+    position: relative;
+    max-width: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Borel', cursive;
+font-family: 'Pacifico', cursive;
+font-family: 'Tektur', cursive;
+    
+}
+header .logo img{
+    width: 60%;
+}
+header ul{
+    position: relative;
+    display: flex;
+    
+}
+header ul li{
+    list-style-type: none;
+    
+}
+header ul li a, a{
+    text-decoration: none;
+    color: #333;
+    font-weight: 400;
+    margin-left: 20px;
+}
+header ul li :hover{
+    color: #15afb8;
+    border: 1px solid #15afb8;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    transition: ease-in-out 1s;
+    border-bottom: 1px solid #15afb8;
+}
+.content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content .frontPageText{
+    position: relative;
+    display: inline-block;
+    justify-content: space-around;
+    align-items: center;
+    font-size:small;
+    padding: 60px;
+    
+   
+
+}
+.frontPageText h3{
+    font-weight: 400;
+    font-size:3.5em;
+    
+}
+.frontPageText a{
+    position: absolute;
+    background-color: rgb(162, 189, 219);
+    margin-top: 6px;
+    padding: 9px;
+    border-radius: 12px;
+    color: #000000;
+    box-shadow: 1px 1px 4px 0px rgba(31, 30, 30, 0.726);
+
+}
+.content  img{
+    width: 600px;
+}
+/*second page*/
+
+.subSection{
+    position: relative;
+    background-color: linear-gradient(to bottom right, red, blue);
+    width: 100%;
+    padding: 12px;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 100px;
+}
+.subSection .container{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    text-align: left;
+    
+}
+.container .someWords{
+    color: red;
+    width: 30%;
+    
+}
+.subSection img{
+    width: 40%;
+    height: 20%;
+    
+}
+
+.randomJoke{
+    position: relative;
+    background-color: black;
+    color: white;
+}
+
+

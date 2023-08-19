@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="./IMAGE/pngwing.com.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TORY</title>
+    <link rel="stylesheet" href="./CSS/Styling.css">
+</head>
+<body>
+   <section>
+    <header>
+        <a href="#" class="logo"><img src="./IMAGE/pngwing.com.png" > JoyfulCoder</a>
+        <ul>
+            <li><a href="#">HOME</a></li>
+            
+            <li><a href="#" style="color: red;">HIRE A WEB DEVELOPER</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+    </header>
+    <div class="content">
+    <div class="frontPageText">
+        <h3> Welcome to my <br />Web Dev Journey! </h3>
+        <p>
+            Hi there! I'm [Tory_Sky], a passionate web developer with a love 
+        for crafting beautiful and functional websites. Through my journey, 
+        I've discovered the joy of turning ideas into digital realities. Here, 
+        you'll find a collection of my web creations, each carefully designed 
+        with creativity and precision. Let's dive into the world of code and imagination together!
+        </p>
+       <div class="learnMore">
+        <a href="#" class="learnmore">learn more...</a>
+       </div>
+         
+    </div>
+    <div class="img">
+        <img src="./IMAGE/TECH.png" alt="">
+    </div>
+    </div>
+   </section>
+   
+   <section class="subSection">
+    <h2>ABOUT US</h2><hr /><br />
+    <div class="container">
+        <div class="imag" style="width: 400px; height: 500px;">
+            <img src="/IMAGE/20221205_113702.jpg" alt="" style="width: 400px; height: 500px;">
+        </div>
+        <div class="someWords">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Accusamus dolor suscipit totam, quis minima hic veritatis aperiam 
+                voluptate. Necessitatibus, ullam? Iure voluptates in dolore porro,
+                 culpa necessitatibus molestiae dolor eveniet?</p>
+                 <ul >
+                    <li>TORY</li>
+                    <li>TORY</li>
+                    <li><input type="text" name="" id="getHostName"></li>
+                    <button onclick="todayT()" >click me </button>
+                 </ul>
+        </div>
+        
+        
+    </div>
+   </section>
+        
+   <section>
+   
+    <div class="randomJoke">
+        <h1>Random Joke Generator</h1>
+        <button onclick="getRandomJoke()" >Get Joke</button>
+        <div id="joke-container"></div>
+    </div>
+   </section>
+    
+
+
+   
+
+
+
+
+   <script>
+    let a = 0;
+  // Async function to fetch a random joke from the API
+  async function getRandomJoke() {
+    const apiUrl = 'https://official-joke-api.appspot.com/random_joke';
+
+    try {
+      // Fetch data from the API using fetch()
+      const response = await fetch(apiUrl);
+
+      // Convert the response to JSON format
+      const jokeData = await response.json();
+
+      // Extract the setup and punchline from the jokeData
+      const { setup, punchline } = jokeData;
+
+      // Display the joke on the web page
+      const jokeContainer = document.getElementById('joke-container');
+      jokeContainer.innerHTML = `<p><strong>${setup}</strong></p><p>${punchline}</p>`;
+    } catch (error) {
+      // Handle errors if the API call fails
+      console.error('Error fetching joke:', error);
+    }
+   a++;
+   //after use has clicked the btn once,
+   if(a === 1){
+    setInterval(getRandomJoke, 6000);
+    
+   }
+  }
+  
+  //API, ASYNC JS, PROMISE, TRY CATCH
+  
+
+
+
+</script>
+</body>
+<script src="./JAVASCRIPT/JavaScript.js"></script>
+</html>

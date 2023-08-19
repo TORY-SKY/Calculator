@@ -1,0 +1,229 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./IMAGE/R.png" type="image/x-icon">
+    <title>Facebook</title>
+    <style>
+      
+      *{
+        
+        box-sizing: border-box; 
+      }  
+      body{
+       
+
+      }
+      .containerDiv{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(236, 241, 243, 0.568);
+        width: 100%;
+        height: 100%;
+      }
+      h1{
+        font-size: 4em;
+        color: #1877f2;
+        margin: 0;
+      }
+      h2{
+        margin: 0;
+        font-weight: 100;
+        
+      }
+      .text{
+        width: 520px;
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-right: 29px;
+        position: relative;
+        top: -60px
+      }
+      
+      .loginform{
+        display: block;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        
+       
+      }
+       form{
+        width: 389px;
+        height: 355px;
+        border-radius: 10px;
+        box-shadow: 2px 1px 9px #8b8b8a;
+        background-color: white;
+        position: relative;
+        font-family: inherit;
+        padding: 18px;
+        
+       }
+       input{
+        border: 1px solid rgba(194, 194, 194, 0.678);
+        font-size: 1em;
+       }
+       input, button{
+        width: 100%;
+        height: 50px;
+        padding: 10px;       
+       }
+       input:hover{
+        outline-color: #1877f2;
+        outline-width: 1px;
+        
+       }
+       input:focus{
+        outline-width: 0.5px;
+        border: 1px;
+       }
+       button{
+        background-color: #1877f2;
+        cursor:pointer;
+        border: none;
+        font-size: 1em;
+        color: white;
+        font-weight: 700;
+        
+
+       }
+       a{
+        text-align: center;
+        text-decoration: none;
+        font-family:sans-serif;
+        
+       }
+       input, button, a{
+        margin-bottom: 10px;
+        border-radius: 6px;
+        
+        
+       }
+       .newAccBTn{
+        width: 50%;
+        background-color: rgb(39, 172, 22);
+        margin: 12px;
+       }
+       .loginBtn{
+        margin-top: 10px;
+        font-size: 1.3em;
+       }
+       .CreatPage{
+        color: black;
+       }
+       a:hover{
+        text-decoration: underline;
+       }
+       .CreatPage:hover{
+        text-decoration: underline;
+        
+       }
+       span:hover{
+        text-decoration: none;
+        
+       }
+       @media only screen and (max-width: 772px){
+        body{
+          background-color: rgba(236, 241, 243, 0.568);
+        }
+        .containerDiv{
+          display: block;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          margin-left: 50;
+          margin-right: -10px;
+          
+          
+          
+        }
+
+       }
+     /*page 2*/
+     div.secondPage{
+      background-color: #f0f2f5;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      overflow: hidden;
+     }
+     .leftContainer{
+      position: relative;
+      width: 700px;
+      height: 350px;
+      border: none;
+      margin-top: 140px;
+      margin-left: 140px;
+      float: left;
+      padding-left: 30px;
+     }
+     .rightContainer{
+      width: 400px;
+      height: 350px;
+      float : left;
+      border: none;
+      margin-top: 140px;
+      margin-left: 10px;
+     }
+     #ftext{
+        font-size: 65px;
+        margin-top: 60px;
+        font-weight: 700;
+        color: #1877f2;
+        
+     }
+     #ftext2{
+      font-size: 25px;
+     }
+     #link1{
+      margin-bottom: 20px;
+     }
+        
+    </style>
+</head>
+<body>
+   
+<div class="containerDiv">
+  <div class="text">
+    <h1>facebook</h1>
+    <h2>Facebook helps you connect and share with the people in your life</h2>
+  </div>
+  <div class="loginform">
+    <form action="">
+      <input type="email" placeholder="Email address or phone number">
+      <input type="password" placeholder="password">
+      <button class="loginBtn">Log in</button>
+      <br /><br />
+      <a href="#">Forgotten password?</a><br /><br /><hr />
+      <button class="newAccBTn">Create new account</button>
+    </form>
+    <a href="" ><strong class="CreatPage">Create a Page</strong></a> <span style="color: black;">for celebrity, brand or business;</span> 
+  </div>
+</div>
+       <!--facebook login-->                          
+ <div class="secondPage">
+  <div class="leftContainer">
+    <h2 id="ftext">facebook</h2>
+    <h2 id="ftext2">
+      Facebook helps you connect and share <br /> with the people in your life
+    </h2>
+  </div>
+  <div class="rightContainer">
+    <form action="">
+      <input type="email" value="" id="emailInput" placeholder="Email address or phone number">
+      <input type="password" value="password" placeholder="password">
+      <button id="link1">Log in</button>
+    <center>  <a href="" >Forgotten password?</a></center>
+      <hr />
+      <button class="newAccBTn">Create new account</button>
+    </form>
+    
+  </div>
+ </div>
+
+
+
+<script src="./JAVASCRIPT/tables.js"></script>
+</body>
+</html>

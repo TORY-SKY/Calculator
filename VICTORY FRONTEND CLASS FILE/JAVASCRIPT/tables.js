@@ -14,4 +14,5 @@ document.querySelector('.loginDetails').appendChild(resultt);
 catch(error){
     console.error('Bro step up the coding game:', error.message);
 }
-})
+});
+console.log(promt('tell us your name, idiot'));

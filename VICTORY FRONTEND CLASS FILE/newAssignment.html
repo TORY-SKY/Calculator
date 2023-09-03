@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="containerDiv">
+        <div class="marqueee"><marquee behavior="" direction="rtl"><p>HELLO WORLD</p></marquee></div>
+        <div class="centerbtn">
+            <button>LOGIN</button>
+            <button>LOGIN</button>
+        </div>
+        <div class="copyright"><p>@copyright 2023</p></div>
+    </div>
+
+    <style>
+        body{
+            position: relative;
+            animation-name: Disp;
+            background-image: url(./IMAGE/bdm_comarch.jpg);
+            padding: 0px;
+            margin: 0;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            transition: 2s;
+            background-position: cover;
+            background-repeat: no-repeat;
+            
+
+        }
+        @keyframes Disp{
+            0% {background-image: url(./IMAGE/bdm_comarch.jpg); width: 2px;}
+            25% { background-image: url(./IMAGE/good_programmer.jpg);}
+            50% {background-image: url(./IMAGE/bdm_comarch.jpg);}
+            75% {background-image: url(./IMAGE/bdm_comarch.jpg);}
+            100% {background-image: url(./IMAGE/joyous.jpg);}
+        }
+        .marqueee{
+            background-color: black;
+            color: white;
+            background-color: black;
+            width: 100%;
+        }
+        .centerbtn{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: %;
+            margin-top: 20%;
+        }
+        button{
+            margin-right: 20px;
+            background-color:antiquewhite;
+            border: 1px solid black;
+            border-radius: 20px;
+            padding: 14px;
+            width: 90px;
+        }
+        .copyright{
+            position: fixed;
+            bottom: 0;
+            text-align: center;
+            background-color: black;
+            width: 100%;
+            color: white;
+        }
+    </style>
+    <script>
+        
+        alert('hello');
+    </script>
+</body>
+</html>

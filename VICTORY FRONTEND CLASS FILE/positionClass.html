@@ -1,0 +1,293 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="landPage">
+        <div class="textDiv">
+            <h1>Building a Planet Where <br />People & Nature Thrive</h1>
+         <center>   <p>We are on a mission to combat climate change crisis, educate, 
+                uplift communities and restore biodiversity. 
+                Join us as we shape a brighter <br />future for people and our planet</p>
+            </center>
+                    <button id="btn" class="btn1">Donate Now-</button>
+                <button id="btn" class="btn2">Volunteer</button>
+            
+        </div>
+    </div>
+    <div id="mainContainer">
+        <div id="container1">
+            
+        </div>
+        <div id="fixedP">
+            <h1>Join us to build a climate-smart generation</h1>
+            <h3>Climate Action</h3>
+            <p>
+                We advocate for inclusive action to address climate change. 
+            The heavy toll that climate change is taking on impoverished communities needs to be addressed. 
+            sJoin us to educate indigenes and call for policies that invest in clean, renewable, and sustainable energy.
+            </p>
+            <h3>Climate Education</h3>
+            <p>
+                
+            Join us on our mission to educate people, advice policy makers on the need 
+            to protect biodiversity and conserve natural resources. Together we can reverse 
+            the effect of climate change, tackle the threats driving the climate crisis, 
+            and protect and restore the environment.
+            </p>
+            <div class="btns">
+                <button id="btn1">DONATE NOW-</button>
+            <button id="btn2">LEARN MORE</button>
+            </div>
+        </div>
+    </div>
+    <div class="thirdpage">
+        <div class="myDivs"><h2>hello</h2></div>
+        <div class="myDivs"><h2>hello</h2></div>
+        <div class="myDivs"><h2>hello</h2></div>
+        <div class="myDivs"><h2>hello</h2></div>
+        <div class="myDivs"><h2>hello</h2></div>
+        <div class="myDivs"><h2>hello</h2></div>
+       
+    </div>
+   
+    <style> 
+        *{
+            box-sizing: border-box;
+        }
+        /*FIRST PAGE*/
+        .landPage{
+            
+            width: 100%;
+            height: 100%;
+            background-image: url(./IMAGE/Fontin.png);
+            background-size: cover;
+            background-position: center;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            top: 200;
+            left: 0; 
+        }
+        .textDiv{
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.603);
+            height: 100%;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: absolute;
+            
+            
+            
+        }
+        .textDiv h1{
+            font-size: 75px;
+            color: white;
+            margin-bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 150px;
+            
+        }
+        .textDiv p{
+            color: white;
+            align-items: center;
+            justify-content: center;
+            font-family: 'REM', sans-serif;
+        }
+        .textDiv p{
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            
+        }
+        #mainContainer{
+        display: flex;
+        position: relative;
+        top: 200;
+            left: 0;
+    }
+    .btn1, .btn2{
+        width: 180px;
+        height: 45px;
+        padding: 13px;
+            font-size: 11px;
+            color: #ffffff;
+            background-color: rgb(7, 7, 48);
+            margin-right: 10px;
+            border-radius: 3px;
+            border: none;
+            margin-top: 7px;
+            font-size: 14px;
+            border-radius: 5px;
+    }
+    
+    .btn2{
+        background-color: black;
+        
+    }
+     /*SECOND PAGE*/
+        #container1{
+            height: 700px;
+            width: 50%;
+            background-image: url(./IMAGE/plantation.PNG);
+            background-size: cover;
+            background-repeat: no-repeat;
+            
+        }
+        #fixedP{
+            height: 700px;
+            width: 50%;
+            padding: 40px;
+            background-color: rgba(255, 205, 213, 0.089);
+
+        }
+        #fixedP h1{
+            font-size: 54px;
+            width: 70%;
+            
+        }
+        .btns{
+            display: flex;  
+            
+        }
+        #btn1{
+            width: 110px;
+            padding: 13px;
+            font-size: 11px;
+            color: #ffffff;
+            background-color: rgb(7, 7, 48);
+            margin-right: 10px;
+            border-radius: 3px;
+            border: none;
+        }
+        #btn1:hover{
+            background-color: #040054;
+        }
+        #btn2:hover{
+            background-color: rgb(27, 27, 27);
+        }
+        #btn2{
+            width: 110px;
+            padding: 13px;
+            font-size: 11px;
+            color: #ffffff;
+            background-color: black;
+            border-radius: 3px;
+            border: none;
+
+        }
+        h1, h3{
+            color: #040054;
+        }
+        #fixedP p{
+          font-family: 'REM', sans-serif;
+          color: grey;
+          font-size: 13px;
+          width: 500px;
+        }
+         /*THIRD PAGE*/
+         .thirdpage{
+            position: relative;
+            display: flex;
+            background-color: white;
+            width: 60%;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid black;
+            height: 100vh;
+            top: 200;
+            left: 20%;
+            max-width: 100%;
+            flex: 1;
+         }
+         .myDivs{
+            width: 33.333%;
+            display: flex;
+            flex-wrap: wrap;
+         }
+         
+
+
+
+
+
+
+
+
+        @media screen and (max-width: 600px ){
+            #mainContainer{
+                justify-content: center;
+                display: block;
+                align-items: center;
+            }
+            #container1{
+                width: 100%;
+            }
+            #fixedP{
+                width: 100%;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+            #fixedP p{
+                width: 100%;
+            }
+            #fixedP h1{
+                width: 100%;
+            }
+            #fixedP button{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                width: 100%;
+            }
+        }
+    </style>
+    <script>
+        fetch('https://my-json-server.typicode.com/typicode/demo/posts')
+        .then(myResponse => {
+            if(!myResponse.ok){
+                console.log('error brother');
+            }
+            return myResponse.json()
+        })
+        .then (myData => {
+            console.log('Congratulations,  Data fetched successfully:', myData);
+        })
+        .catch(error => {
+            console.error("An error occured brother:", error);
+        });
+        console.log("Success!!!");
+        
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

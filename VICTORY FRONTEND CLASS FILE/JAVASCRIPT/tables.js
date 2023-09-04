@@ -1,4 +1,20 @@
-const createH1tag = document.createElement('h1');
-createH1tag.textContent = 'trythis out Brandy';
-document.querySelector('.loginDetails').appendChild(createH1tag);
-console.log(createH1tag);
+
+
+function buttn(){
+    const lis = document.querySelectorAll('li');
+lis.forEach(element => {
+    const parag = document.createElement('li');
+    const addThis = prompt('enter your name bro');
+    const node = document.createTextNode(addThis);
+    parag.appendChild(node);
+    if(addThis === ' '){
+        
+        return false
+    }
+   
+        element.appendChild(parag);
+    
+});
+}
+const addBTN = document.getElementById('addBTN');
+addBTN.addEventListener('click', buttn);

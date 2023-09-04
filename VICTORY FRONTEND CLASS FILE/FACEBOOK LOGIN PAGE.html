@@ -123,11 +123,17 @@
         text-decoration: none;
         
        }
-.loginDetails{
+       .loginDetails{
+        display: flex;
+       }
+.loginDetails .sublog{
   border: 1px solid black;
   width: auto;
   height: auto;
   font-size: 2em;
+  margin-right: 30px;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 15px;
 }
 
        @media only screen and (max-width: 772px){
@@ -171,7 +177,20 @@
   </div>
 </div>
      
- <div class="loginDetails"></div>
+ <div class="loginDetails">
+  <div class="sublog">
+    <ul>
+      <li>FRUITS</li>
+      <li>GROCERIES</li>
+      <li>CLOTHES</li>
+      <li>SHOES</li>
+    </ul>
+  </div>
+  <div class="sublog2">
+    <input type="Button" id="addBTN" value="add li" >
+    <input type="button" value="Delete li">
+  </div>
+ </div>
 
 
 

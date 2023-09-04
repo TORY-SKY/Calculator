@@ -1,18 +1,23 @@
 
 
 //working with inputs
-const logInBTN = document.querySelector('#link1');
-document.addEventListener('click', ()=>{
-    try{
-    const login = "";
-const Emails = document.querySelector('input').value;
-const emails1 = document.createElement('h1');
- emails1.textContent = Emails
-const resultt = emails1.appendChild(emails1);
-document.querySelector('.loginDetails').appendChild(resultt);
-}
-catch(error){
-    console.error('Bro step up the coding game:', error.message);
+try{
+const logInBTN = document.querySelector('#loginButton');
+logInBTN.addEventListener('click', ()=>{
+    alert('the button has been clicked');
+    const testing12 = document.createElement('h1')
+testing12.textContent ="this is your line:" + " " + document.querySelector('#formF').firstChild.value;
+if(document.querySelector('#formF').firstChild.value == ""){
+    alert('empty input bro');
+    return false;
+}else{
+
+document.getElementById('loginDetails').appendChild(testing12);
+console.log(testing12);
 }
 });
-console.log(promt('tell us your name, idiot'));
+
+}catch (error){
+    
+    console.error('bro, try harder:', error.message);
+}

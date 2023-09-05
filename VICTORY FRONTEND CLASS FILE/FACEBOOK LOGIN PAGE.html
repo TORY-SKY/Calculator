@@ -1,199 +1,224 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./IMAGE/R.png" type="image/x-icon">
-    <title>Facebook</title>
-    <style>
-      
-      *{
-        
-        box-sizing: border-box; 
-      }  
-      body{
-       
 
-      }
-      .containerDiv{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./IMAGE/R.png" type="image/x-icon">
+  <title>Facebook</title>
+  <style>
+    * {
+
+      box-sizing: border-box;
+    }
+
+    body {}
+
+    .containerDiv {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(236, 241, 243, 0.568);
+      width: 100%;
+      height: 100%;
+    }
+
+    h1 {
+      font-size: 4em;
+      color: #1877f2;
+      margin: 0;
+    }
+
+    h2 {
+      margin: 0;
+      font-weight: 100;
+
+    }
+
+    .text {
+      width: 520px;
+      font-size: 15px;
+      font-family: Arial, Helvetica, sans-serif;
+      margin-right: 29px;
+      position: relative;
+      top: -60px
+    }
+
+    .loginform {
+      display: block;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+
+
+    }
+
+    form {
+      width: 389px;
+      height: 355px;
+      border-radius: 10px;
+      box-shadow: 2px 1px 9px #8b8b8a;
+      background-color: white;
+      position: relative;
+      font-family: inherit;
+      padding: 18px;
+
+    }
+
+    input {
+      border: 1px solid rgba(194, 194, 194, 0.678);
+      font-size: 1em;
+    }
+
+    input,
+    button {
+      width: 100%;
+      height: 50px;
+      padding: 10px;
+    }
+
+    input:hover {
+      outline-color: #1877f2;
+      outline-width: 1px;
+
+    }
+
+    input:focus {
+      outline-width: 0.5px;
+      border: 1px;
+    }
+
+    button {
+      background-color: #1877f2;
+      cursor: pointer;
+      border: none;
+      font-size: 1em;
+      color: white;
+      font-weight: 700;
+
+
+    }
+
+    a {
+      text-align: center;
+      text-decoration: none;
+      font-family: sans-serif;
+
+    }
+
+    input,
+    button,
+    a {
+      margin-bottom: 10px;
+      border-radius: 6px;
+
+
+    }
+
+    .newAccBTn {
+      width: 50%;
+      background-color: rgb(39, 172, 22);
+      margin: 12px;
+    }
+
+    .loginBtn {
+      margin-top: 10px;
+      font-size: 1.3em;
+    }
+
+    .CreatPage {
+      color: black;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .CreatPage:hover {
+      text-decoration: underline;
+
+    }
+
+    span:hover {
+      text-decoration: none;
+
+    }
+
+    .loginDetails {
+      display: flex;
+    }
+
+    .loginDetails .sublog {
+      border: 1px solid black;
+      width: auto;
+      height: auto;
+      font-size: 2em;
+      margin-right: 30px;
+      font-family: 'Courier New', Courier, monospace;
+      padding: 15px;
+    }
+
+
+    @media only screen and (max-width: 772px) {
+      body {
         background-color: rgba(236, 241, 243, 0.568);
-        width: 100%;
-        height: 100%;
       }
-      h1{
-        font-size: 4em;
-        color: #1877f2;
-        margin: 0;
-      }
-      h2{
-        margin: 0;
-        font-weight: 100;
-        
-      }
-      .text{
-        width: 520px;
-        font-size: 15px;
-        font-family: Arial, Helvetica, sans-serif;
-        margin-right: 29px;
-        position: relative;
-        top: -60px
-      }
-      
-      .loginform{
+
+      .containerDiv {
         display: block;
         align-items: center;
         justify-content: center;
         text-align: center;
-        
-       
+        margin-left: 50;
+        margin-right: -10px;
+
+
+
       }
-       form{
-        width: 389px;
-        height: 355px;
-        border-radius: 10px;
-        box-shadow: 2px 1px 9px #8b8b8a;
-        background-color: white;
-        position: relative;
-        font-family: inherit;
-        padding: 18px;
-        
-       }
-       input{
-        border: 1px solid rgba(194, 194, 194, 0.678);
-        font-size: 1em;
-       }
-       input, button{
-        width: 100%;
-        height: 50px;
-        padding: 10px;       
-       }
-       input:hover{
-        outline-color: #1877f2;
-        outline-width: 1px;
-        
-       }
-       input:focus{
-        outline-width: 0.5px;
-        border: 1px;
-       }
-       button{
-        background-color: #1877f2;
-        cursor:pointer;
-        border: none;
-        font-size: 1em;
-        color: white;
-        font-weight: 700;
-        
 
-       }
-       a{
-        text-align: center;
-        text-decoration: none;
-        font-family:sans-serif;
-        
-       }
-       input, button, a{
-        margin-bottom: 10px;
-        border-radius: 6px;
-        
-        
-       }
-       .newAccBTn{
-        width: 50%;
-        background-color: rgb(39, 172, 22);
-        margin: 12px;
-       }
-       .loginBtn{
-        margin-top: 10px;
-        font-size: 1.3em;
-       }
-       .CreatPage{
-        color: black;
-       }
-       a:hover{
-        text-decoration: underline;
-       }
-       .CreatPage:hover{
-        text-decoration: underline;
-        
-       }
-       span:hover{
-        text-decoration: none;
-        
-       }
-       .loginDetails{
-        display: flex;
-       }
-.loginDetails .sublog{
-  border: 1px solid black;
-  width: auto;
-  height: auto;
-  font-size: 2em;
-  margin-right: 30px;
-  font-family: 'Courier New', Courier, monospace;
-  padding: 15px;
-}
-
-       @media only screen and (max-width: 772px){
-        body{
-          background-color: rgba(236, 241, 243, 0.568);
-        }
-        .containerDiv{
-          display: block;
-          align-items: center;
-          justify-content: center;
-          text-align: center;
-          margin-left: 50;
-          margin-right: -10px;
-          
-          
-          
-        }
-
-       }
-   
-        
-    </style>
+    }
+  </style>
 </head>
+
 <body>
-   
-<div class="containerDiv">
-  <div class="text">
-    <h1>facebook</h1>
-    <h2>Facebook helps you connect and share with the people in your life</h2>
+
+  <div class="containerDiv">
+    <div class="text">
+      <h1>facebook</h1>
+      <h2>Facebook helps you connect and share with the people in your life</h2>
+    </div>
+    <div class="loginform">
+      <form action="" id="formF">
+        <input type="email" placeholder="Email address or phone number" id="userName">
+        <input type="password" placeholder="password">
+        <button class="loginBtn" id="loginButton">Log in</button>
+        <br /><br />
+        <a href="#">Forgotten password?</a><br /><br />
+        <hr />
+        <button class="newAccBTn">Create new account</button>
+      </form>
+      <a href=""><strong class="CreatPage">Create a Page</strong></a> <span style="color: black;">for celebrity, brand
+        or business;</span>
+    </div>
   </div>
-  <div class="loginform">
-    <form action="" id="formF">
-      <input type="email" placeholder="Email address or phone number" id="userName">
-      <input type="password" placeholder="password">
-      <button class="loginBtn" id="loginButton">Log in</button>
-      <br /><br />
-      <a href="#">Forgotten password?</a><br /><br /><hr />
-      <button class="newAccBTn">Create new account</button>
-    </form>
-    <a href="" ><strong class="CreatPage">Create a Page</strong></a> <span style="color: black;">for celebrity, brand or business;</span> 
+  <!--working on js dom-->
+  <div class="loginDetails">
+    <div class="sublog">
+      <h2>TODO LIST</h2>
+      <input type="text" id="todoItems">
+      <input type="button" value="Save input" id="saveBtn">
+      <div class="reflect" id="displayTodo">
+        <ul id="addTodo">
+          <input type="checkbox" name="tory" id="">
+        </ul>
+      </div>
+
+    </div>
+
   </div>
-</div>
-     
- <div class="loginDetails">
-  <div class="sublog">
-    <ul>
-      <li>FRUITS</li>
-      <li>GROCERIES</li>
-      <li>CLOTHES</li>
-      <li>SHOES</li>
-    </ul>
-  </div>
-  <div class="sublog2">
-    <input type="Button" id="addBTN" value="add li" >
-    <input type="button" value="Delete li">
-  </div>
- </div>
 
 
 
-<script src='./JAVASCRIPT/tables.js'></script>
+  <script src='./JAVASCRIPT/tables.js'></script>
 </body>
+
 </html>

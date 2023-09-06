@@ -38,3 +38,28 @@ function remove() {
     console.log(check);
 }
 remove();
+
+function screen(){
+    console.log("screen width as the moment is actually:" + screen.width);
+}
+
+/*function trythis(){
+    const inputt = prompt('enter your name bro');
+    if(screen.width !== undefined){
+        screen();
+    }
+    else{
+        alert('what are you doing bro?');
+    }
+}
+trythis();
+console.log('do you know:  ' + "cookies enabled: " + navigator.cookieEnabled + "," + ' appName is: ' + navigator.appName);
+console.log(cookie);
+const cookiesh3 = document.createElement('h3');
+const myCookies = cookie;
+const texts = cookiesh3.textContent = 'your cookies said: ' +  myCookies;
+
+document.getElementById('displayTodo').appendChild(cookiesh3);
+*/
+const myName = 'victor';
+console.log(`here is a little story about a great tycon, author, Software Engineer, Web Developer, Automotive Engineer. His name is ${myName}`);

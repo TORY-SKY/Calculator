@@ -265,9 +265,10 @@ const nigeriaCities = {
 
 
 const selectedState = document.getElementById('states');
-const cities = document.getElementById('cities');
+
 //adding an eventlistener
 selectedState.addEventListener('change', ()=>{
+  const cities = document.getElementById('cities');
   //this part iterate over variable named nigeriaCities
   for(const key in nigeriaCities){
     //check if selected value equals to one of the nigeriaCities varable
@@ -280,9 +281,10 @@ selectedState.addEventListener('change', ()=>{
         const optionTag = document.createElement('option');
         optionTag.textContent = nigeriaCities[key][a];
         cities.appendChild(optionTag);
+        
       }
      }
     }
   }
-
+  console.log(cities.value);
 })

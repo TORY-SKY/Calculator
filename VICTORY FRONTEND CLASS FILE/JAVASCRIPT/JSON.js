@@ -1,10 +1,14 @@
+
 const inputs = document.querySelectorAll('input');
 inputs.forEach(inputValue =>{
     inputValue.addEventListener('input', ()=>{
-        if(inputValue.value == "" || inputValue.value == 1){
-            alert('youre still on the right track bro');
+        if(inputValue.value == "" || !isNaN(inputValue.value)){
+            alert('input your name');
+            return false;
         } else{
-            console.log('nothing happend bro')
+            const SavedItems = localStorage.setItem('names', inputs);
+            const displayParentDiv = document.getElementById('displayDiv');
+            const createUL = document.createElement('ul')
         }
     });
     

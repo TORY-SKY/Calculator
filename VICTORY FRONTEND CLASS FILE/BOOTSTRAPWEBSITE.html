@@ -3,59 +3,47 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>learing_BootStrap n JSON</title>
-  <style>
-    .container{
-      background-color: black;
-      z-index: -1;
-      padding: 12px;
-      width: 100vw;
-      height: 100vw;
-      align-items:center;
-      justify-content: center;
-
-    }
-    .subContainer{
-      border: 1px solid white;
-      width: 300px;
-      height: 400px;
-      justify-content: center;
-      align-items: center;
-      padding: 10px;
-      z-index: 1;
-      box-shadow: 1px 3px 15px grey;
-      margin: 100px auto;
-
-    }
-    input{
-      width: 100%;
-      height: 50px;
-      margin-bottom: 20px;
-    }
-    input[type='button']{
-      background-color: greenyellow;
-      border-radius: 10px;
-    }
-    input[type='button']:hover{
-      background-color: green;
-    }
-   
-  </style>
-</head>
-
-<body>
-  <header>
-    <div class="container">
-      <div class="subContainer">
-        <input type="text" placeholder="enter your name bro">
-        <input type="button" value="SAVE">
-        <div id="displayDiv">
-
+  <link rel="stylesheet" href="./CSS/bootstrap.css">
+  <div class="containerDiv">
+    <div class="contentdiv">
+      <header>
+        <img src="./IMAGE/safehandLogo.png" alt="LOGO" >
+        <div id="searchDiv">
+          <input type="text" placeholder="search here...">
+          <img src="./IMAGE/searchIcon.png" alt="searchIcon">
         </div>
+      </header>
+      <div class="section">
+        <nav>
+          <a href="" id="officialWebsite">Safehands Profilling System</a>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Our Services</a></li>
+            <li><a href="">Media</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+          <a id="atag" href=""  >Login Now</a>
+        </nav>
+      </div>
+      <div class="notSection">
+        <div id="slider-Wrapper">
+          <div id="slider">
+          <img src="./IMAGE/savehandWoman.png" alt="img1" id="slide1">
+          <img src="./IMAGE/2ndSafeguardImg.jpeg" alt="img1" id="slide2">
+          <img src="./IMAGE/savehandWoman.png" alt="img1" id="slide3">
+        </div>
+            <div id="slide-nav">
+              <a href="#slide1"></a>
+              <a href="#slide2"></a>
+              <a href="#slide3"></a>
+            </div>
+      </div>
       </div>
     </div>
-  </header>
 
 
+  </div>
   <script src="./JAVASCRIPT/JSON.js"></script>
 </body>
 </html>

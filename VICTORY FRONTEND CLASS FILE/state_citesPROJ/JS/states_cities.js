@@ -1,8 +1,18 @@
 const nigeriaCities = {
   FCT_Abuja: [
-    "Abuja",
-    "TANGAYIKA",
-    "Im SUCCESSFUL"
+    "Central Area",
+    "Wuse",
+    "Garki",
+    "Maitama",
+    "Asokoro",
+    "Gwarimpa",
+    "Jabi",
+    "Utako",
+    "Wuye",
+    "Kubwa",
+    "Nyanya",
+    "Karu",
+    "Lugbe",
   ],
   Abia: [
     "Umuahia",

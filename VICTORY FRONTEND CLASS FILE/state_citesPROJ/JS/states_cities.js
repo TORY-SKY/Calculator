@@ -279,14 +279,15 @@ const selectedState = document.getElementById('states');
 //adding an eventlistener
 selectedState.addEventListener('change', ()=>{
   const cities = document.getElementById('cities');
-  //this part iterate over variable named nigeriaCities
+  //this part iterate over the variable named nigeriaCities
   for(const key in nigeriaCities){
     //check if selected value equals to one of the nigeriaCities varable
     //create an option tag
     //append the values under selected state to...
     if(selectedState.value == key){
-     for(let i=0; i<nigeriaCities[key].length; i++){
       cities.innerHTML = "";
+     for(let i=0; i<nigeriaCities[key].length; i++){
+      
       for(let a = 0; a<nigeriaCities[key].length; a++){
         const optionTag = document.createElement('option');
         optionTag.textContent = nigeriaCities[key][a];
@@ -296,5 +297,5 @@ selectedState.addEventListener('change', ()=>{
      }
     }
   }
-  console.log(cities.value);
+ 
 })

@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <div class="container">
+    <div class="img">
+        <img src="./IMAGE/good_programmer.jpg" alt="PROGRAMER">
+    </div>
+    <div class="words">
+        <h2>EZEKIEL VICTOR AYOBAMI</h2>
+        <h4>FULL STACK WEB DEVELOPER</h4>
+    </div> 
+   
+   </div>
+
+
+
+   <style>
+    body{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        animation-name: easy;
+        animation-iteration-count: infinite;
+        animation-duration: 5s;
+        background-position: center;
+        background-size: cover;
+    }
+    @keyframes easy{
+        from{background-image: url(./IMAGE/good_programmer.jpg);}
+        to{background-image: url(./IMAGE/background.jpg);}
+    }
+    .container{
+        width: 100%;
+        height: 100vh;
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .words{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        
+    }
+    img{
+        width: 200px;
+    }
+   
+    .img{
+        position: relative;
+      border: 1px solid black;
+      border-radius: 50%;
+        overflow: hidden;
+        width: 140px;
+        animation-name: display;
+        animation-duration: 2s;
+
+       top: 0;
+       left: 0;
+    }
+    @keyframes display {
+        from{top: -150px; left: 0px;}        
+        to{top: 0px; left: 0px;}        
+    }
+   
+   </style>
+</body>
+</html>

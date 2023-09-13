@@ -286,15 +286,12 @@ selectedState.addEventListener('change', ()=>{
     //append the values under selected state to...
     if(selectedState.value == key){
       cities.innerHTML = "";
-     for(let i=0; i<nigeriaCities[key].length; i++){
-      
       for(let a = 0; a<nigeriaCities[key].length; a++){
         const optionTag = document.createElement('option');
         optionTag.textContent = nigeriaCities[key][a];
         cities.appendChild(optionTag);
         
       }
-     }
     }
   }
  

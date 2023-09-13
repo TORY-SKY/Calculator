@@ -176,6 +176,25 @@
       }
 
     }
+    #error-message{
+      transition: all 1s ease;
+      background-color: rgb(246, 244, 244);
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 100;
+      transform: translate(-100%); 
+    }
+    @keyframes flyin {
+      0%{
+        transform: translate(-100%);
+      }
+      100%{transform: translate(0%)};
+      
+    }
+    .fly-in{
+      animation: flyin 1s ease forwards;
+    }
   </style>
 </head>
 
@@ -187,9 +206,10 @@
       <h2>Facebook helps you connect and share with the people in your life</h2>
     </div>
     <div class="loginform">
+      <h2 id="error-message"></h2>
       <form action="" id="formF">
         <input type="email" placeholder="Email address or phone number" id="userName">
-        <input type="password" placeholder="password">
+        <input type="password" placeholder="password" id="password">
         <button class="loginBtn" id="loginButton">Log in</button>
         <br /><br />
         <a href="#">Forgotten password?</a><br /><br />
@@ -218,7 +238,7 @@
 
 
 
-  <script src='./JAVASCRIPT/tables.js'></script>
+  <script src="./JAVASCRIPT/FACEBOOK.js"></script>
 </body>
 
 </html>

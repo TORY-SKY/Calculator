@@ -31,7 +31,7 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 12px;
-
+    
 }
 header img{
     width: 20%;
@@ -48,13 +48,12 @@ header img{
     border: 1px solid #058710;
 
 }
-#searchDiv img{
-    margin-left:;
-}
+
 .section{
+    display: block;
     justify-content: center;
     align-items: center;
-    margin: 12px;
+    
     
     
 }
@@ -75,7 +74,7 @@ header img{
     padding-left: 20px;
     padding-right: 20px;
     overflow: hidden;
-    margin: auto;
+    margin-bottom: 12px;
 }
 .section nav ul {
     text-decoration: none;
@@ -110,27 +109,28 @@ a{
 }
 /*SLIDE IMAGES STYLING*/
 .notSection{
+width: 100%;
 
 }
 #slider-Wrapper{
     position: relative;
     max-width: 60rem;
-   margin: 0 auto;
+    margin: 0 auto;
    
 }
 #slider{
     display: flex;
-    aspect-ratio: 16/5;
     overflow-x: hidden;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     
 }
 #slider img{
-    flex: 0 1 100%;
+    
     scroll-snap-align: start;
-    object-fit:contain;
     width: 100%;
+    object-position: center;
+    object-fit:cover;
     
 }
 #slide-nav{
@@ -151,4 +151,31 @@ a{
     transition: opacity ease 250ms;
     box-shadow: 2px 2px 12px black;
 }
-
+/*FAQ*/
+div{
+    display: grid;
+    place-items: center;
+}
+.FAQ{
+    display: grid;
+    place-items: center;
+    
+}
+.register:hover{
+    height: 120px;
+}
+.register{
+    border: 1px solid #058710;
+    display: grid;
+    place-items: center;
+    height: 40px;
+    overflow: hidden;
+    transition: 1s;
+}
+ 
+.how{
+    background-color:#058710;
+    width: 90%;
+    position: relative;
+    top: 0;
+}

@@ -1,5 +1,5 @@
 
-const inputs = document.querySelectorAll('input');
+const inputs = document.querySelector('input');
 inputs.forEach(inputValue =>{
     inputValue.addEventListener('input', ()=>{
         if(inputValue.value == "" || !isNaN(inputValue.value)){
@@ -11,5 +11,7 @@ inputs.forEach(inputValue =>{
             const createUL = document.createElement('ul')
         }
     });
-    
+
+
 })
+

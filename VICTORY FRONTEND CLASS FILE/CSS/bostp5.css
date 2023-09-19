@@ -1,39 +1,19 @@
 *{
     margin: 0;
     padding: 0;
-
-}
-body{
-   
-}
-a{
-    color: white;
-}
-.skills{
-    position: fixed;
-    bottom: 10;
-    top: 100;
-
-}
-.toryS{
-    color: white;
-    background-image: linear-gradient(180deg, rgba(255,0,0,0), rgba(124, 170, 191, 0.377)), url;
-}
-.imgTag{
-    position: relative;
-   
-    width: 500px;
-    height: 500px;
-    clip-path: circle(50% 0 0);
-    transition: 3s;
-    animation: forwards;
-    animation-name: frontpageIMG;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-}
-
-   @keyframes frontpageIMG {
-    from{ transform: scale(34deg);}
-    to {transform: scaleY(120deg);}
+    box-sizing: border-box;
     
-   }
+}
+
+#imgDiv{
+    z-index: 0;
+}
+img{
+    position: relative;
+    transition: 2s;
+    z-index: 222;
+   
+}
+
+@keyframes easy {
+   

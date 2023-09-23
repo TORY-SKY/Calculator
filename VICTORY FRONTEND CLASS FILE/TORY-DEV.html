@@ -5,9 +5,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
    <link rel="stylesheet" href="./CSS/bostp5.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <title>Tory-Sky</title>
 </head>
-<body class=" ">
+<body class="">
  
     <nav class="navbar navbar-expand-lg bg-body-tertiary justify-content-center shadows rounded-2 px-3">
         <div class="container-fluid ">
@@ -21,7 +22,7 @@
                 <a class="nav-link active" aria-current="page" href="#Home">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">ABOUT</a>
+                <a class="nav-link" href="#ABOUT">ABOUT</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -29,19 +30,19 @@
                 </a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="#HTML" >HTML</a></li>
-                  <li><a class="dropdown-item" href="#">CSS</a></li>
-                  <li><a class="dropdown-item" href="#">JAVA SCRIPT</a></li>
-                  <li><a class="dropdown-item" href="#">BOOTSTRAP</a></li>
+                  <li><a class="dropdown-item" href="#HTML">CSS</a></li>
+                  <li><a class="dropdown-item" href="#HTML">JAVA SCRIPT</a></li>
+                  <li><a class="dropdown-item" href="#HTML">BOOTSTRAP</a></li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">CONTACTS</a>
+                <a class="nav-link" href="#CONTACT">CONTACTS</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-      <section class="bg-dark text-light text-center  py-5 py-lg-0">
+      <section class="bg-black text-light text-center  py-5 py-lg-0">
         <div class="container ">
           <div class="d-sm-flex container-fluid px-5 align-items-center justify-content-between">
             <div class="px-2 text-lg-start">
@@ -51,9 +52,9 @@
                 </p>
                 <p class="lead mb-3">Explore my portfolio and discover a world where pixels meet purpose. Whether you're here to admire my work, collaborate 
                   on a project, or simply geek out about all things web, you've come to the right place.</p>
-                  <button class="btn btn-primary btn-lg"> Check my Resume</button>
+                  <a class="btn btn-primary btn-lg" href="./state_citesPROJ/resumePage.html" target="_blank">Check my Resume</a>
             </div>
-            <img src="./IMAGE/portfolio_man_5.png" alt="" class="img-fluid  d-none d-md-none w-50  d-lg-block">
+            <img src="./IMAGE/TOry.JPG" alt="" class="img-fluid  d-none d-md-none w-50  d-lg-block">
           </div>
         </div>
       </section>
@@ -70,19 +71,19 @@
         </nav>
        </div>
       </section>
-      <section>
-        <div class="container py-3">
-          <div class="row px-5 justify-content-center align-items-center">
-            <div class="col-lg-6 col-sm-12">
-              <h1>My Story</h1>
-              <div class="card p-2 my-2 border-0">
+      <section class="bg-body-tertiary">
+        <div class="container py-3 ">
+          <div class="row px-5 justify-content-center align-items-center ">
+            <div class="col-lg-6 col-sm-12 my-2">
+              <h1 id="ABOUT">My Story</h1>
+              <div class="card p-3 my-2 shadow-lg">
                 
               <h4>My Web Development Journey</h4>
               <p>
                 Hello there! I'm A-WINNER, a passionate Front-End Web Developer on a mission to craft beautiful and user-friendly digital experiences. My journey into the world of web development began with a curiosity for creating and an insatiable appetite for learning.
               </p>
               </div>
-              <div class="card p-2 border-0">
+              <div class="card p-2 shadow-lg ">
                 <h4>The Early Days</h4>
                 <p>One day, I stumbled upon the magical trio of HTML, CSS, and JavaScript, and it felt like discovering a new universe. I started by crafting simple web pages, playing with colors, fonts, and layouts. Those early experiments evolved into my first real website projects.</p>
               </div>
@@ -110,9 +111,48 @@
           </div>
         </div>
       </section>
+      <section class="bg-body-secondary ">
+        <div class="container">
+          <div class="row px-5 py-5">
+            <div class="col-lg-8 col-sm-12">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Name</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Your name">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Leave a message</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-12" id="CONTACT">
+              <h4>CONTACT DETAILS</h4>
+              <div class="row">
+                <div class="col-sm-12 col-lg-12"><span><i class="fas fa-mobile-alt"></i> </span><span >+2348121766402</span></div>
+                <div class="col-sm-12 col-lg-12"><span><i class="fas fa-paper-plane"></i></span> <span>ezevictor559@gmail.com</span></div>
+                <div class="col-sm-12 col-lg-12"><span><i class="fab fa-github"></i></span> <span>TORY_SKY</span></div>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       
-    
+    <style>
+      .card{
+        transition: 1s;
+        
+      }
+      .card:hover{
+        background-color: brown;
+        color: white;
+        transform: translate(20deg);
+      }
+    </style>
     
         
 
@@ -120,6 +160,7 @@
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    
+
+        
 </body>
 </html>

@@ -1,0 +1,19 @@
+*{
+   
+    
+}
+body{
+   background-color: #e9ecef; 
+}
+.hero{
+    clip-path: polygon(0 0, 100% 0, 100% 44%, 0% 100%);
+}
+.section2{
+    position: relative;
+    top: -155;
+    transition: 1s;
+    
+}
+.section2:hover{
+    transform: scale(1.1);
+}

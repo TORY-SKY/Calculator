@@ -1,10 +1,25 @@
 import {Component} from "react"
-const displayMessage = (props)=>{
-    return 'Im enjoying this' + (2 + 2);
-}
-class Message extends Component {
+
+
+
+class Usingstate extends Component{
+    constructor(){
+        super();
+        this.state = {
+            increa = 0;
+        };
+    }
+    increament(){
+        this.state({icrea: this.state.increa + 1});
+    }
     render(){
-        return <h2>Tory is doing pretty well with react, and he said {displayMessage()} </h2>
+        return (
+            <div>
+                <p>This should work {this.state.increa}</p>
+                <button onClick={()=> this.increament()}></button>
+            </div>
+        )
+        
     }
 }
-export default Message;
+export default Usingstate;

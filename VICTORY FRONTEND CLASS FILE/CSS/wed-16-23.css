@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f5f5f5  !important;
+}
+.navigationB{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+ .BUTT {
+    color: white !important;
+    font-size: larger;
+    border-color: #f68b1e !important;
+    background-color: #f68b1e !important;
+  }
+  form.d-flex button.btn.btn-outline-info .searchBTn:hover{
+    background-color: #f68b1e !important;
+}
+.mySearch{
+    width: 100% !important;
+}
+ .Home{
+    color: #f68b1e !important;
+    text-decoration: underline !important;
+}
+.section3{
+    background-image: url('../IMAGE/Woman.jfif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    max-width: 200vh;
+    background-position: 10%;
+    
+}
+.color-overlay{
+    background-color: rgba(0, 0, 0, .5);
+    width: 100%;
+    color: white;
+    height: 100%;
+}
+.CARD{
+    position: inherit;
+    top: -90;
+}
+.NAVIGA{
+    font-family: Roboto,Helvetica,Arial,sans-serif;
+}

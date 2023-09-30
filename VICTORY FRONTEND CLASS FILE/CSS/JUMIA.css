@@ -12,8 +12,14 @@ body{
     position: relative;
     top: -155;
     transition: 1s;
+    border: 12px solid black;
     
 }
 .section2:hover{
     transform: scale(1.1);
+}
+@media  screen and (max-width: 720px){
+    .section2{
+        transform: scale(0.8);
+    }
 }

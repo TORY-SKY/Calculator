@@ -11,6 +11,12 @@ body{
     justify-content: center;
     color: white;
 }
+.nav2{
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 111;
+    background-color: #f5f5f5  !important;
+}
  .BUTT {
     color: white !important;
     font-size: larger;
@@ -57,4 +63,24 @@ body{
 }
 .NAVIGA{
     font-family: Roboto,Helvetica,Arial,sans-serif;
+}
+.list-group-item.active{
+    background-color: #f68b1e !important;
+    border: none;
+}
+.section5{
+    background-color: #e0e0e0  !important;
+}
+.fab.fa-apple.fa-3x:hover{
+    color: #f68b1e !important;
+}
+.fab.fa-android.fa-3x:hover{
+    color: #f68b1e !important;
+}
+.Male, .Female{
+    background-color: #f68b1e !important;
+    border: none;
+}
+.Male:hover{
+    background-color: #d97109 !important;
 }

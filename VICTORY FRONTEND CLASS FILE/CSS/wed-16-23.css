@@ -42,10 +42,18 @@ body{
     width: 100%;
     color: white;
     height: 100%;
+    transition: 0.5s;
 }
-.CARD{
-    position: inherit;
+.CCARD{
+    position: relative;
     top: -90;
+    transform: scale(1);
+    
+}
+.CCARD:hover{
+    transform: scale(1.1);
+    transition: 1s ease-in-out;
+    
 }
 .NAVIGA{
     font-family: Roboto,Helvetica,Arial,sans-serif;

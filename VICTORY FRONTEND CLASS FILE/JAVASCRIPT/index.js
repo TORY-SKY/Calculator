@@ -1,8 +1,9 @@
 
+//Buttons function
 function btnFunc(number){
     var btns = document.getElementById("display");
     let btnValue = btns.value;
-    btns.value = btnValue + number; 
+    btns.value += number; 
     
     
     

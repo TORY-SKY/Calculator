@@ -7,7 +7,7 @@
     <meta name="author" content="Tory">
     <meta name="description" content="An HTML and CSS based website">
     <title>HTML CLASS CodeSchool Africa(CALCULATOR)</title>
-    <link rel="stylesheet" href="./CSS/index.css">
+    <link rel="stylesheet" href="/CSS/index.css">
 </head>
 <body>
         
@@ -35,7 +35,7 @@
                 <button id="+" value="+" onclick= "btnFunc('+')">+</button>
                 <button id="-" value="-" onclick= "btnFunc('-')">-</button>
                 <button id="/" value="/" onclick= "btnFunc('/')">/</button>
-                <button id="*" value="*" onclick= "btnFunc('*')">*</button>
+                <button id="*" value="*" onclick= "btnFunc('*')">&times;</button>
                 <button onclick="btnFunc(0);" id="0">0</button>
                 <button id="*" value="*" onclick= "delFunc()">del</button>
                 <button id="equalsTo" onclick="equalTo()">=</button>
@@ -47,6 +47,87 @@
     <div class="secondPhase">
        
     </div>
+    <style>
+        *{
+    box-sizing: border-box;
+}
+
+  @import url('https://fonts.googleapis.com/css2?family=Glory&family=Roboto&family=Tektur:wght@400;500&family=Ysabeau+SC:wght@500&display=swap');
+span{
+    font-family: 'Glory', sans-serif;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Tektur', cursive;
+    font-family: 'Ysabeau SC', sans-serif;
+color: white;
+}
+.calculatorDiv{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(23, 45, 34, 0.6);
+    align-items: center;
+    text-align: center;
+    position: relative;
+
+}
+.calculatorDiv .contentDiv{
+    box-sizing: border-box;
+    width: 20%;
+    padding: 20px;
+    border: 1px solid rgba(2, 4, 5, 0.74);
+    border-radius: 15px;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    background-color:rgb(0, 0, 0);
+    margin: 12px;
+    box-shadow: 12px 12px 12px 0px rgba(31, 30, 30, 0.726);
+    border: 6px solid grey;
+    
+}
+
+    .displayInputDiv{
+        border: 1px solid #ffffff;
+        background-color:  grey;
+        width: 100%;
+    }
+
+.calculatorDiv .contentDiv .displayInputDiv{
+    display: block;
+    justify-content: flex-end;
+}
+.calculatorDiv .contentDiv .displayInputDiv input{
+    position: relative;
+    width: 100%;
+    display: block;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-end;
+    outline: none;
+    padding: 10px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    align-items: right;
+    text-align: right;
+    color:aquamarine;
+}
+
+
+.calculatorDiv .contentDiv  #btns button{
+    width: 20%;
+   padding: 8px;
+   margin: 3px;
+   box-shadow: 0px 8px 12px 0px rgba(31, 30, 30, 0.726);
+   background-color: black;
+   color: white;
+   border-radius: 12px 12px 15px ;
+    
+}
+
+    </style>
 
 
     <script src="./JAVASCRIPT/index.js"></script>

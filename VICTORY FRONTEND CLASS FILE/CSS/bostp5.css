@@ -3,6 +3,32 @@
     margin: 0;
     padding: 0;
 }
-@media screen {
+.bg-image{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    filter: brightness(0.5);
+    position: absolute;
+    top: auto;
+    left: 0;
+    z-index: -1;
+}
+.page2{
+    position: absolute !important;
+    font-size: 25px !important;
+}
+.NavigationMenu{
     
+    backdrop-filter: blur(5px) !important;
+    z-index: 122;
+    
+}
+ul li:hover a{
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-bottom: 2px solid rgb(234, 7, 7) !important;
+    transition: 0.5s;
+
+
 }

@@ -1,17 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=M+PLUS+Rounded+1c:wght@300&family=Montserrat:wght@100&family=Pacifico&family=Quicksand:wght@300&family=REM:wght@500&family=Rajdhani:wght@500&family=Tektur:wght@600&family=The+Nautigal:wght@700&display=swap');
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-.bg-image{
+.bg-image {
     width: 100vw;
     height: 100vh;
     object-fit: cover;
-    filter: brightness(0.5);
+    filter: brightness(0.1);
+    background-color: black;
     position: absolute;
     top: auto;
     left: 0;
     z-index: -1;
+}
+.secImg{
+    position: absolute !important;
+    top: 100%;
+    left: 0;
 }
 .page2{
     position: absolute !important;
@@ -31,4 +39,48 @@ ul li:hover a{
     transition: 0.5s;
 
 
+}
+.HomePage{
+    position: relative !important;
+   top: 50;
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center !important;
+    align-items: center;
+    text-align: center;
+    
+    font-family: 'Borel', cursive;
+font-family: 'Dancing Script', cursive;
+font-family: 'M PLUS Rounded 1c', sans-serif;
+
+
+}
+.Homeh1{
+    font-family: 'Borel', cursive;
+font-family: 'M PLUS Rounded 1c', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Pacifico', cursive;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Rajdhani', sans-serif;
+font-family: 'REM', sans-serif;
+font-family: 'Tektur', sans-serif;
+font-family: 'The Nautigal', cursive;
+font-size: 5rem !important;
+}
+.socialsIcons a{
+    text-decoration: none !important;
+
+}
+.ServicesPage{
+    width: 100vw;
+    height: 100vh;
+    
+}
+.cards{
+    height: 3rem !important;
+    border-radius: 5px !important;
+    width: 20rem;
+    height: 20rem;
+    background-color: beige !important;
 }

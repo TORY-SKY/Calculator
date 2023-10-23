@@ -8,6 +8,7 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
    <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <link href="https://fonts.googleapis.com/css2?family=Borel&family=Dancing+Script:wght@400;500;700&family=M+PLUS+Rounded+1c:wght@300&family=Montserrat:wght@100&family=Pacifico&family=Quicksand:wght@300&family=REM:wght@500&family=Rajdhani:wght@500&family=Tektur:wght@600&display=swap" rel="stylesheet"> 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <title>Barber Shop</title>
@@ -57,7 +58,7 @@
 </div>
 </div>
 <div class="container-fluid ">
-<div class="container HomePage text-light h-100">
+<div class="container HomePage text-light h-100" data-aos='zoom-in' data-aos-duration="1000">
     <h1 class=" mx-4  Homeh1 mb-0 text-warning">Welcome to <span class="mt-0">Barb and Vibe meetPoint</span></h1>
     <h4 class="mx-5 font-weight-bold textAArea">
       We are a team of experienced and passionate barbers who are dedicated to providing our clients with the best possible grooming experience. We offer a wide range of services, from haircuts and beard trims to facials and hot shaves.
@@ -80,11 +81,11 @@
 </div>
 <div class="container-fluid secImg bg-black ServicesPage">
  <div class="container  text-light my-5">
-  <h2 class="d-flex align-items-center justify-content-center">What we offer </h2>
+  <h2 class="d-flex align-items-center justify-content-center" data-aos='zoom-in' data-aos-duration="1000">What we offer </h2>
  
-    <div class="row d-lg-flex align-items-center justify-content-center">
-      <div class="col-lg-4 col-sm-4 col-xm-4 d-sm-flex d-lg-flex align-items-center justify-content-center">
-        <div class="card bg-black text-light cardBody " style="width: 18rem;">
+    <div class="row d-lg-flex align-items-center justify-content-center" data-aos='slide-up' data-aos-duration="1000">
+      <div class="col-lg-4 col-sm-4 col-xm-4 d-sm-flex d-lg-flex align-items-center justify-content-center" >
+        <div class="card bg-black text-light cardBody " style="width: 18rem;" data-aos="bottom-top" data-aos-duration="1000">
           <img src="./IMAGE/Men_haircut.jpg" class="card-img-top" alt="...">
           <div class="card-body d-flex align-content-center justify-content-center">
             <p class="card-text">Haircuts for men, women, or children..</p>
@@ -95,7 +96,7 @@
         </div>
       </div>
       <div class="col-lg-4 col-sm-4 col-xm-4 d-sm-flex  d-lg-flex align-items-center justify-content-center">
-        <div class="card bg-black text-light cardBody " style="width: 18rem;">
+        <div class="card bg-black text-light cardBody " style="width: 18rem;" data-aos="bottom-top" data-aos-duration="1000">
           <img src="./IMAGE/beard trimming.jpg" class="card-img-top" alt="...">
           <div class="card-body d-flex align-content-center justify-content-center">
             <p class="card-text">Styling and grooming services.</p>
@@ -155,13 +156,13 @@
     </div>
     <div class="container-fluid bg-body-light  d-lg-flex align-content-center justify-content-center">
       <div class="container">
-        <h1 class="d-lg-flex align-content-center justify-content-center">Pricing</h1>
-        <div class="row PricingPage">
-          <div class="col-6">
+        <h1 class="d-lg-flex align-content-center justify-content-center" data-aos="fade-in" data-aos-duration="1000">Pricing</h1>
+        <div class="row PricingPage" >
+          <div class="col-6" data-aos="slide-up" data-aos-duration="1000">
             <img src="./IMAGE/Caleb.jpg" class="img-fluid" alt="">
           </div>
 
-          <div class="col-6">
+          <div class="col-6" data-aos="slide-up" data-aos-duration="1000">
            <div class="container bg-transparent my-lg-5">
             <table class="table table-borderless bg-transparent ThePrice">
               <thead>
@@ -174,41 +175,33 @@
                   <tr>
                       <td style="color: gold;">Apple</td>
                       <td style="color: gold;">$1.99</td>
-                      <td style="color: gold;">$1.99</td>
                   </tr>
                   <tr>
                       <td style="color: gold;">Banana</td>
-                      <td style="color: gold;">$0.99</td>
                       <td style="color: gold;">$0.99</td>
                   </tr>
                   <tr>
                     <td style="color: gold;">Banana</td>
                     <td style="color: gold;">$0.99</td>
-                    <td style="color: gold;">$0.99</td>
                 </tr>
                 <tr>
                   <td style="color: gold;">Banana</td>
-                  <td style="color: gold;">$0.99</td>
                   <td style="color: gold;">$0.99</td>
               </tr>
               <tr>
                 <td style="color: gold;">Banana</td>
                 <td style="color: gold;">$0.99</td>
-                <td style="color: gold;">$0.99</td>
             </tr>
             <tr>
               <td style="color: gold;">Banana</td>
-              <td style="color: gold;">$0.99</td>
               <td style="color: gold;">$0.99</td>
           </tr>
           <tr>
             <td style="color: gold;">Banana</td>
             <td style="color: gold;">$0.99</td>
-            <td style="color: gold;">$0.99</td>
         </tr>
                   <tr>
                       <td style="color: gold;">Orange</td>
-                      <td style="color: gold;">$2.49</td>
                       <td style="color: gold;">$2.49</td>
                   </tr>
                   <!-- Add more rows for other fruits -->
@@ -216,7 +209,7 @@
           </table>
 
            </div>
-           <div class="col-12 my-3 MailBTN">
+           <div class="col-12 my-3 MailBTN" data-aos="fade-in" data-aos-duration="1000">
             <a href="#" class="btn btn-transparent border border-2 text-warning w-100 " role="button" data-bs-toggle="button">Send us a mail</a>
           </div>
           </div>
@@ -224,6 +217,38 @@
         </div>
       </div>
   </div>
+  <div class="container   py-4">
+    <div class="row container">
+      <h1 class="text-center" >GALLERY</h1>
+      <div class="col-3"> <div class='card border border-1'><img src="./IMAGE/beard trimming.jpg" class="img-fluid" alt=""></div></div>
+      <div class="col-3"> <div class='card border border-1'><img src="./IMAGE/beard trimming.jpg" class="img-fluid" alt=""></div></div>
+      <div class="col-3"> <div class='card border border-1'><img src="./IMAGE/beard trimming.jpg" class="img-fluid" alt=""></div></div>
+      <div class="col-3"> <div class='card border border-1'><img src="./IMAGE/beard trimming.jpg" class="img-fluid" alt=""></div></div>
+      <div class="col-3"> <div class='card border border-1'><img src="./IMAGE/beard trimming.jpg" class="img-fluid" alt=""></div></div>
+      <div class="col-3"> <div class='card border border-1'><img src="./IMAGE/beard trimming.jpg" class="img-fluid" alt=""></div></div>
+      <div class="col-3"> <div class='card border border-1'><img src="./IMAGE/beard trimming.jpg" class="img-fluid" alt=""></div></div>
+      <div class="col-3"> <div class='card border border-1'><img src="./IMAGE/beard trimming.jpg" class="img-fluid" alt=""></div></div>
+      <div class="col-3"> <div class='card border border-1'><img src="./IMAGE/beard trimming.jpg" class="img-fluid" alt=""></div></div>
+      <div class="col-3"> <div class='card border border-1'><img src="./IMAGE/beard trimming.jpg" class="img-fluid" alt=""></div></div>
+      <div class="col-3"> <div class='card border border-1'><img src="./IMAGE/beard trimming.jpg" class="img-fluid" alt=""></div></div>
+      <div class="col-3"> <div class='card border border-1'><img src="./IMAGE/beard trimming.jpg" class="img-fluid" alt=""></div></div>
+
+    </div>
+  </div>
+
+  <div class="container-fluid bg-body-light  d-lg-flex align-content-center justify-content-center">
+    <div class="container">
+      <h1 class="d-lg-flex align-content-center justify-content-center" data-aos="fade-in" data-aos-duration="1000">Pricing</h1>
+      <div class="row PricingPage" >
+        <div class="col-6" data-aos="slide-up" data-aos-duration="1000">
+          <img src="./IMAGE/Caleb.jpg" class="img-fluid" alt="">
+        </div>
+
+       https://calendly.com/torydev/30min
+        
+      </div>
+    </div>
+</div>
  </div>
  
 </div>
@@ -404,6 +429,10 @@
 
 
   -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
  
             <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>

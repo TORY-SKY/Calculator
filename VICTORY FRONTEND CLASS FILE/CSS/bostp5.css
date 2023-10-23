@@ -145,6 +145,20 @@ font-size: 5rem !important;
     left: -300 !important;
     top: 450 !important;
 }
+h1{
+    font-family: 'Borel', cursive;
+    font-family: 'Cinzel Decorative', serif;
+    font-family: 'Fugaz One', sans-serif;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Playpen Sans', cursive;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
+    font-family: 'REM', sans-serif;
+    font-family: 'Tektur', sans-serif;
+    font-family: 'The Nautigal', cursive;
+}
 /*Our Services section*/
 @media only screen and (max-width: 768px){
     .cardBody{
@@ -184,3 +198,66 @@ font-size: 5rem !important;
         width: 100%;
     }
 }
+
+/*
+THE BOOKING FORM SECTION
+*/
+
+.form-group {
+    margin: 10px 0;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    color: rgb(28, 28, 28) !important;
+  }
+  input:focus{
+    background-color: transparent !important;
+    color: white !important;
+  }
+  select:focus{
+    background-color: transparent !important;
+
+  }
+  input[type="text"],
+  input[type="email"],
+  select,
+  input[type="date"],
+  input[type="time"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #333; /* Dark gray input background color */
+    color: #fff; /* White text color */
+  }
+  
+  button {
+    background-color: #d9534f; /* Red submit button color */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #c9302c; /* Darker red on hover */
+  }
+  .form-select{
+    background-color: transparent !important;
+    color: white !important;
+  }
+  .option{
+    color: black !important;
+    background-color: transparent !important;
+  }
+ 
+  .Page3{
+    position: absolute;
+    top: 100 !important;
+    color: white !important;
+    z-index: 222222;
+  }
